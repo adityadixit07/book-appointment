@@ -135,10 +135,10 @@ function Layout({ children }) {
               </Badge>
 
               {/* <Link className="anchor mx-2" to="/profile"> */}
-              {/* <Link className="anchor mx-2" to={`/doctor/profile/${user?._id}`}>
+              <Link className="anchor mx-2" to={`/doctor/profile/${user?._id}`}>
                 {user?.name}
-              </Link> */}
-              {user?.isDoctor && (
+              </Link>
+              {/* {user?.isDoctor && (
                 <Link
                   className="anchor mx-2"
                   to={`/doctor/profile/${user?._id}`}
@@ -151,7 +151,7 @@ function Layout({ children }) {
                 <Link className="anchor mx-2" to="/">
                   {user?.name}
                 </Link>
-              )}
+              )} */}
             </div>
           </div>
 
