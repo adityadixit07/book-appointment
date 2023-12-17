@@ -26,7 +26,7 @@ router.get("/get-all-users", authMiddleware, async (req, res) => {
   try {
     const users = await User.find({});
     // exclude admin
-    const filteredUsers = users.filter((user) => user.isAdmin===true);
+    const filteredUsers = users.filter((user) => user.isAdmin===false);
     res.status(200).send({
       message: "Users fetched successfully",
       success: true,
